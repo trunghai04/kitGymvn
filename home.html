@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+
+<html lang="vi"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "on-tertiary-fixed": "#374155",
+                    "primary": "#9c3f00",
+                    "on-tertiary-fixed-variant": "#535e72",
+                    "surface-tint": "#9c3f00",
+                    "surface-container-lowest": "#ffffff",
+                    "error-container": "#f95630",
+                    "on-surface-variant": "#7f512e",
+                    "on-primary-container": "#401500",
+                    "surface-container-low": "#ffede4",
+                    "surface-dim": "#ffc9a6",
+                    "on-secondary-fixed-variant": "#426500",
+                    "on-error": "#ffefec",
+                    "tertiary-fixed": "#dae6fe",
+                    "error": "#b02500",
+                    "surface-bright": "#fff4ef",
+                    "on-secondary-container": "#3b5b00",
+                    "outline-variant": "#dba078",
+                    "secondary-fixed-dim": "#a5e837",
+                    "on-tertiary-container": "#495468",
+                    "error-dim": "#b92902",
+                    "primary-dim": "#893600",
+                    "primary-fixed": "#ff7a2f",
+                    "on-surface": "#4a2506",
+                    "surface": "#fff4ef",
+                    "tertiary-fixed-dim": "#ccd7ef",
+                    "secondary": "#426500",
+                    "on-background": "#4a2506",
+                    "on-primary": "#fff0ea",
+                    "surface-container-high": "#ffdcc6",
+                    "tertiary-container": "#dae6fe",
+                    "secondary-container": "#b2f746",
+                    "on-error-container": "#520c00",
+                    "tertiary": "#515c70",
+                    "inverse-primary": "#fe6b00",
+                    "surface-container": "#ffe3d2",
+                    "surface-container-highest": "#ffd4b9",
+                    "secondary-fixed": "#b2f746",
+                    "outline": "#9e6b47",
+                    "primary-fixed-dim": "#f66700",
+                    "secondary-dim": "#395800",
+                    "background": "#fff4ef",
+                    "on-secondary": "#dbffa3",
+                    "on-tertiary": "#eff2ff",
+                    "inverse-surface": "#1c0900",
+                    "inverse-on-surface": "#c99169",
+                    "on-primary-fixed": "#000000",
+                    "on-secondary-fixed": "#2d4700",
+                    "on-primary-fixed-variant": "#4f1c00",
+                    "surface-variant": "#ffd4b9",
+                    "primary-container": "#ff7a2f",
+                    "tertiary-dim": "#455064"
+            },
+            "borderRadius": {
+                    "DEFAULT": "1rem",
+                    "lg": "2rem",
+                    "xl": "3rem",
+                    "full": "9999px"
+            },
+            "fontFamily": {
+                    "headline": ["Lexend"],
+                    "body": ["Lexend"],
+                    "label": ["Lexend"]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+            display: inline-block;
+            vertical-align: middle;
+        }
+        .kinetic-gradient {
+            background: linear-gradient(45deg, #9c3f00, #ff7a2f);
+        }
+        .glass-nav {
+            backdrop-filter: blur(24px);
+            -webkit-backdrop-filter: blur(24px);
+        }
+    </style>
+</head>
+<body class="bg-background text-on-surface font-body selection:bg-secondary-container selection:text-on-secondary-container">
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 bg-orange-50/60 backdrop-blur-md dark:bg-slate-950/60 transition-all duration-300">
+<div class="flex justify-between items-center h-20 px-8 max-w-7xl mx-auto">
+<a class="text-2xl font-black text-orange-900 dark:text-orange-400 uppercase italic tracking-tighter" href="home.html">
+                Kit gymvn
+            </a>
+<div class="hidden md:flex space-x-10 font-lexend text-body-lg tracking-tight">
+<a class="text-orange-900 dark:text-orange-300 font-bold border-b-2 border-orange-900 dark:border-orange-300 pb-1" href="home.html">Home</a>
+<a class="text-orange-800/70 dark:text-slate-400 font-medium hover:text-green-500 transition-colors hover:scale-105" href="chuongtrinhtapluyen.html">Programs</a>
+<a class="text-orange-800/70 dark:text-slate-400 font-medium hover:text-green-500 transition-colors hover:scale-105" href="hoctapvalopphi.html">Schedule</a>
+<a class="text-orange-800/70 dark:text-slate-400 font-medium hover:text-green-500 transition-colors hover:scale-105" href="hotlineangdlogin.html">Contact</a>
+</div>
+<a class="kinetic-gradient text-on-primary px-8 py-3 rounded-xl font-bold hover:scale-105 transition-all duration-300 shadow-lg inline-block" href="hotlineangdlogin.html#dang-ky-tu-van">
+                Tham gia ngay
+            </a>
+</div>
+</nav>
+<!-- Hero Section -->
+<header class="relative min-h-screen flex items-center pt-20 overflow-hidden bg-surface">
+<div class="max-w-7xl mx-auto px-8 w-full grid grid-cols-1 lg:grid-cols-12 gap-12 items-center relative z-10">
+<div class="lg:col-span-7">
+<div class="inline-flex items-center gap-2 px-4 py-2 bg-secondary-container text-on-secondary-container rounded-full mb-6 font-bold tracking-wide">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">bolt</span>
+                    TRUNG TÂM THỂ CHẤT CHO TRẺ 9-15 TUỔI
+                </div>
+<h1 class="text-6xl md:text-8xl font-black text-on-surface leading-[0.9] tracking-tighter mb-8">
+                    ĐÁNH THỨC <br/>
+<span class="text-primary italic">CHIỀU CAO</span> <br/>
+                    VÀ NĂNG LƯỢNG
+                </h1>
+<p class="text-xl md:text-2xl text-on-surface-variant max-w-xl mb-10 leading-relaxed">
+                    Giúp con bứt phá giới hạn hình thể, tự tin hơn với lộ trình rèn luyện chuyên sâu cho lứa tuổi dậy thì.
+                </p>
+<div class="flex flex-wrap gap-4">
+<a class="kinetic-gradient text-on-primary px-10 py-5 rounded-xl text-lg font-black hover:scale-105 transition-all shadow-xl flex items-center gap-3" href="hotlineangdlogin.html#dang-ky-tu-van">
+                        ĐĂNG KÝ TƯ VẤN MIỄN PHÍ
+                        <span class="material-symbols-outlined">arrow_forward</span>
+</a>
+<a class="bg-surface-container-highest text-primary px-10 py-5 rounded-xl text-lg font-black hover:bg-surface-container-high transition-all" href="chuongtrinhtapluyen.html">
+                        TÌM HIỂU THÊM
+                    </a>
+</div>
+</div>
+<div class="lg:col-span-5 relative">
+<div class="relative w-full aspect-square rounded-full bg-secondary-container overflow-hidden border-[12px] border-surface-container">
+<img alt="Young athlete training" class="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-700" data-alt="dynamic shot of a determined 12 year old boy in athletic gear jumping high on a bright modern gym background with orange accents" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC51H66QDnrlzT3B_aNIW43xC8UslVwHYcCTPOn4u6o6iCsWi1rgxABS1XN445wX-n6rqslFaIsDUoOS-X2ClfnNz3_mBJdR_bU4_ctLVMwlwRHc82W-O5ngRrMCMWxSqgfxMmQDCqV9e5mLA0Rqn_d0wX_6D-TE-oDyVSZvxeJktgIuB23MFcuKcJxZAiAFL_VfOT-nyrrY1dlJa1QIW1g9IH6MyJpZR0W5QKCUZB8KU4RmFKxZIXSY4Gnzk1lpvPRH2Jrhuu5jmM"/>
+</div>
+<div class="absolute -bottom-6 -left-6 bg-surface-container-lowest p-6 rounded-lg shadow-2xl border border-outline-variant/20 flex items-center gap-4">
+<div class="w-12 h-12 bg-secondary rounded-full flex items-center justify-center text-on-secondary">
+<span class="material-symbols-outlined">height</span>
+</div>
+<div>
+<div class="text-sm font-bold opacity-60">CAM KẾT</div>
+<div class="text-xl font-black">+5-8cm Chiều Cao</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Decorative Elements -->
+<div class="absolute top-0 right-0 w-1/3 h-full bg-surface-container-low -skew-x-12 origin-top transform translate-x-20"></div>
+</header>
+<!-- Why Kit gymvn (Bento Grid) -->
+<section class="py-24 bg-surface-container-low">
+<div class="max-w-7xl mx-auto px-8">
+<div class="mb-16">
+<h2 class="text-4xl md:text-5xl font-black text-on-surface tracking-tighter mb-4">TẠI SAO PHỤ HUYNH CHỌN <br/> <span class="text-primary italic">KIT GYMVN?</span></h2>
+<div class="h-2 w-24 bg-secondary rounded-full"></div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+<div class="md:col-span-2 bg-surface-container-highest p-10 rounded-xl flex flex-col justify-between overflow-hidden relative group">
+<div class="relative z-10">
+<span class="material-symbols-outlined text-5xl text-primary mb-6">psychology</span>
+<h3 class="text-3xl font-black mb-4">Lộ trình Khoa học</h3>
+<p class="text-lg text-on-surface-variant max-w-md">Giáo án được thiết kế riêng bởi các chuyên gia dinh dưỡng và HLV chuyên nghiệp, tập trung vào kích thích xương và chuyển hóa năng lượng.</p>
+</div>
+<div class="absolute right-0 bottom-0 w-1/2 opacity-20 group-hover:opacity-100 transition-opacity translate-y-10 group-hover:translate-y-0 duration-500">
+<img alt="Science lab icon" data-alt="scientific illustration of growth plates and nutritional elements in a clean medical artistic style with warm orange lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBV21Zc_LLOhDTncca1qZa85jCNyzpnwVeesPxRuOGlHnNJDgWlW5Jc4OT29D6HabCFkhfbDHFzH7z2xzg28tEDcJI2EoHsJv6eKxFx_M_Dnana_cHQHNtXzt2zMCh6P02XaZI6_1cZWLrjcw_K7MTXMyc_iO-IDQWRYc1_Rq_MR2hf_aiMC-p708f8QUcM5q4ulMVfqowLDUJVbUPabUAcd2P0vdAR7d6peqmLoyDDRCR1bMr6SfQVE9dcdu6mj5uwxE0cjzxNKaY"/>
+</div>
+</div>
+<div class="bg-secondary-container p-10 rounded-xl group hover:bg-secondary transition-colors">
+<span class="material-symbols-outlined text-5xl text-on-secondary-container group-hover:text-on-secondary mb-6">groups</span>
+<h3 class="text-3xl font-black text-on-secondary-container group-hover:text-on-secondary mb-4">Cộng đồng Năng động</h3>
+<p class="text-lg text-on-secondary-container/80 group-hover:text-on-secondary/80">Con được rèn luyện cùng bạn bè đồng trang lứa, xây dựng kỹ năng xã hội và tinh thần đồng đội.</p>
+</div>
+<div class="bg-surface-container-lowest p-10 rounded-xl border border-outline-variant/10 shadow-sm">
+<span class="material-symbols-outlined text-5xl text-primary mb-6">verified_user</span>
+<h3 class="text-3xl font-black mb-4">An toàn Tuyệt đối</h3>
+<p class="text-lg text-on-surface-variant">Trang thiết bị chuẩn quốc tế, phù hợp với sự phát triển cơ xương của trẻ em lứa tuổi 9-15.</p>
+</div>
+<div class="md:col-span-2 bg-primary-container p-10 rounded-xl flex items-center justify-between group overflow-hidden">
+<div class="max-w-sm">
+<h3 class="text-3xl font-black text-on-primary-container mb-4">HLV Tận Tâm</h3>
+<p class="text-lg text-on-primary-container/80">Đội ngũ HLV không chỉ là người thầy mà còn là người bạn đồng hành truyền cảm hứng cho con.</p>
+</div>
+<div class="hidden md:block w-48 h-48 rounded-full overflow-hidden border-4 border-on-primary-container/20">
+<img alt="Coach smiling" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida/ADBb0ugUBsUuLaDpDPfTyYXVQ_sAC8C1bQfdpi-vSx_4jCs4mp5WbFO-gRGdgtYkqE117MzCCPnXlt9TdAb_O3G1VWw8XlPY1h1jGzycPsY31ZGynlV9Ojv2ePxOuf2Q7KjkMaoX6ryq5DCPQxtuUXQV_cNrSC3bK9XgOfGwRhqjY_1pPXKeEds2fuhxVO78TWDsf_ACsC492vXIbNJbmyPps506hEgDdPZ9HC829iz_R4gpb_9P05wvNZ7ZFoA-XZdVUJOmGMBD_LAS"/>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Training Programs -->
+<section class="py-24 bg-surface">
+<div class="max-w-7xl mx-auto px-8">
+<div class="text-center mb-20">
+<h2 class="text-5xl font-black text-on-surface mb-6">CHƯƠNG TRÌNH HUẤN LUYỆN</h2>
+<p class="text-xl text-on-surface-variant max-w-2xl mx-auto italic">Tập trung vào 2 mục tiêu cốt lõi để trẻ phát triển toàn diện nhất.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+<!-- Height Growth -->
+<div class="group">
+<div class="relative rounded-xl overflow-hidden mb-8 h-[400px] shadow-2xl transition-transform duration-500 group-hover:scale-[1.02]">
+<img alt="Basketball training" class="w-full h-full object-cover" data-alt="teenagers practicing basketball in a high-end indoor court with warm atmospheric lighting and dynamic lens flares" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA7G8I894UC5RIkVuSBIpPS6zg5RRReNjtaJZU3MdyMnfy9sEiCHHXBXFWNpPCLConzsw4uzB37OxHteDO7ThlgdRxl27_aL5aqZ0CmgMS4cpKPBZXGK9KmiXPaG_Ufr5lBLC7ioyswh_b_UkIGFN-WybT9e2r-YL10GCcT6xg4fCWZ0dN-1NPi9DPr0C6qKMFmXHJErvuIJRzwUefrtBRmpzJEhb1BD5bLp2DijOywksYd9ctaGIFgoS7qHZu8RQ9--SesYyDk78I"/>
+<div class="absolute inset-0 bg-gradient-to-t from-primary/90 to-transparent"></div>
+<div class="absolute bottom-8 left-8 right-8">
+<h3 class="text-4xl font-black text-white mb-2 uppercase">Vươn Tầm Cao</h3>
+<p class="text-white/80 font-bold tracking-widest text-sm uppercase">Chương trình tăng chiều cao</p>
+</div>
+</div>
+<ul class="space-y-4 px-4">
+<li class="flex items-center gap-4 text-lg font-medium">
+<span class="material-symbols-outlined text-secondary">check_circle</span>
+                            Bài tập kéo giãn và kích thích xương chuyên sâu
+                        </li>
+<li class="flex items-center gap-4 text-lg font-medium">
+<span class="material-symbols-outlined text-secondary">check_circle</span>
+                            Chế độ dinh dưỡng giàu Canxi &amp; Vitamin D
+                        </li>
+<li class="flex items-center gap-4 text-lg font-medium">
+<span class="material-symbols-outlined text-secondary">check_circle</span>
+                            Theo dõi chỉ số sinh trắc hàng tháng
+                        </li>
+</ul>
+</div>
+<!-- Weight Control -->
+<div class="group">
+<div class="relative rounded-xl overflow-hidden mb-8 h-[400px] shadow-2xl transition-transform duration-500 group-hover:scale-[1.02]">
+<img alt="Active workout" class="w-full h-full object-cover" data-alt="group of kids performing energetic cardio exercises in a spacious modern studio with vibrant green and orange lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBPsObN2B2LESt2ZJTNy67fJmQ00G_Wbhl26b27MZcgKN2t63zXLiiXnNqoAdU09UgP4GSzuf16h5L4Ch4F_9BcDX1feigf2jWQmNCVQ3BxpTJ5OfVAg9NLFgAzfVFt8BdhxibUYDN6xYxS6oD7mqSPyBv7wp29u2Cfnt45oJNcqxfnD9M2irFvyZo-KnuZBao-NRlaR0l8VmKc1pLZcCE7uPpgB8b8ibg_4Qvx5V01IVvWXN2umrLWeVghFCo5ddya3qcg2_TIURE"/>
+<div class="absolute inset-0 bg-gradient-to-t from-secondary/90 to-transparent"></div>
+<div class="absolute bottom-8 left-8 right-8">
+<h3 class="text-4xl font-black text-white mb-2 uppercase">Làm Chủ Vóc Dáng</h3>
+<p class="text-white/80 font-bold tracking-widest text-sm uppercase">Kiểm soát cân nặng &amp; Cardio</p>
+</div>
+</div>
+<ul class="space-y-4 px-4">
+<li class="flex items-center gap-4 text-lg font-medium">
+<span class="material-symbols-outlined text-primary">check_circle</span>
+                            Đốt mỡ hiệu quả thông qua các bài tập vui nhộn
+                        </li>
+<li class="flex items-center gap-4 text-lg font-medium">
+<span class="material-symbols-outlined text-primary">check_circle</span>
+                            Xây dựng thói quen ăn uống lành mạnh
+                        </li>
+<li class="flex items-center gap-4 text-lg font-medium">
+<span class="material-symbols-outlined text-primary">check_circle</span>
+                            Tăng cường sức bền và hệ tim mạch
+                        </li>
+</ul>
+</div>
+</div>
+</div>
+</section>
+<!-- Parent Testimonials -->
+<section class="py-24 bg-surface-container overflow-hidden">
+<div class="max-w-7xl mx-auto px-8 relative">
+<h2 class="text-5xl font-black text-center mb-20 text-on-surface">CHIA SẺ TỪ <span class="text-primary italic">PHỤ HUYNH</span></h2>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<!-- Card 1 -->
+<div class="bg-surface-container-lowest p-10 rounded-xl relative shadow-sm">
+<span class="material-symbols-outlined text-primary-container text-6xl absolute -top-8 -left-2">format_quote</span>
+<p class="text-lg italic text-on-surface-variant mb-8 relative z-10 leading-relaxed">
+                        "Sau 6 tháng tại Kit gymvn, bé Nam cao thêm được 4cm và tự tin hơn hẳn. Thích nhất là các thầy cô cực kỳ nhiệt tình và tâm lý với trẻ."
+                    </p>
+<div class="flex items-center gap-4">
+<div class="w-14 h-14 rounded-full bg-secondary-container overflow-hidden">
+<img alt="Avatar" data-alt="portrait of a smiling mother in her 40s looking happy and relieved, outdoor natural lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCixJvK-eh-Odm52r1wFRMoVaVagwzuhQvnXguhlweWxZEBkDWuSVDs91pOHeMobx-QgShbhfEwh5WJn5Y1MOFWM_XJqdNAuPiJDb07UAiA3LUake9pc7TUfennxdQIFuSlubfrkINgS4tKR2BhN-GKWqMETMEkcQyjNVlq8glqNtYc7I3EDyh3P9kV9CCEXNRn1hLC5HjM9lqPJrtwx36ac8Qculkae3Mgnj9uh8L0MpWnigdkfzaxuy-EqovjeXWvZhQ2r58T29c"/>
+</div>
+<div>
+<div class="font-black text-on-surface">Chị Lan Anh</div>
+<div class="text-sm opacity-60">Phụ huynh bé Nam (13 tuổi)</div>
+</div>
+</div>
+</div>
+<!-- Card 2 -->
+<div class="bg-surface-container-lowest p-10 rounded-xl relative shadow-sm scale-105 z-10 border-2 border-primary/20">
+<span class="material-symbols-outlined text-primary-container text-6xl absolute -top-8 -left-2">format_quote</span>
+<p class="text-lg italic text-on-surface-variant mb-8 relative z-10 leading-relaxed">
+                        "Con tôi trước đây khá thừa cân và ngại vận động. Từ ngày tham gia khóa Kiểm soát cân nặng, con đã giảm được 5kg và rất ham đi tập."
+                    </p>
+<div class="flex items-center gap-4">
+<div class="w-14 h-14 rounded-full bg-secondary-container overflow-hidden">
+<img alt="Avatar" data-alt="portrait of a proud father in his 40s wearing a polo shirt, looking confident and smiling, soft studio light" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCdwVgqnASqAucGGnv2NgtBACfBeqCGBldj_nXNLVB4YtcbllbltUTxiLfmeMmin0jG4mX0aX0y8YxQb0HovP3e0y_tsEGakT_YYYvVsSNdaelHu6vZHbxo3BrVn5hP1s-xQJLKWTJ9rl7SitHLntesSVuTlGbSdEXQMskZfKBhc2zlF9Ezz0E1vW0-K3gCroRkCnKiLNEvAK9N1Qtlnuf22QHcvjRgehX3sCQme7GUcYzGmibklBPOVT5z8fK6Vpx6O1rIJJDR0_g"/>
+</div>
+<div>
+<div class="font-black text-on-surface">Anh Tuấn Minh</div>
+<div class="text-sm opacity-60">Phụ huynh bé Khôi (11 tuổi)</div>
+</div>
+</div>
+</div>
+<!-- Card 3 -->
+<div class="bg-surface-container-lowest p-10 rounded-xl relative shadow-sm">
+<span class="material-symbols-outlined text-primary-container text-6xl absolute -top-8 -left-2">format_quote</span>
+<p class="text-lg italic text-on-surface-variant mb-8 relative z-10 leading-relaxed">
+                        "Cơ sở vật chất ở đây rất tốt và sạch sẽ. Phương pháp tập luyện hiện đại, không gây áp lực cho các bé lứa tuổi học sinh."
+                    </p>
+<div class="flex items-center gap-4">
+<div class="w-14 h-14 rounded-full bg-secondary-container overflow-hidden">
+<img alt="Avatar" data-alt="portrait of a cheerful professional woman with a warm smile, wearing business casual attire, bright indoor lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAMX47bsW_KSHj-S0-jtxPF6FVPxS-2stYPjaCEft28AxEzUb5e_SupcKV-IBDG4mSfP7UaVKQV8GASfdKZhTUylGXkNS-lpxtnsUG6O7zVGplxlRC0WON7ZXngvALmLzxAetqFlpt9SyK569ghiPOUXPSHdbNPXOYgMnoWlMa9ikg7kkRfJayPoSYF2ZQeZh7Drzu5wmgPArs8efTy0w-SZMidr3n-InbuxA9qRIj63Y4I9AGQmZZ1-o6uy_oGdYe9OH5HZnv2ZTI"/>
+</div>
+<div>
+<div class="font-black text-on-surface">Chị Minh Hà</div>
+<div class="text-sm opacity-60">Phụ huynh bé Linh (14 tuổi)</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class="py-24 bg-surface" id="dang-ky-tu-van">
+<div class="max-w-7xl mx-auto px-8 grid grid-cols-1 lg:grid-cols-2 gap-10">
+<div>
+<h2 class="text-4xl font-black mb-4">Đăng ký tư vấn miễn phí</h2>
+<p class="text-on-surface-variant mb-8">Điền thông tin để đội ngũ Kit gymvn liên hệ tư vấn lộ trình phù hợp cho bé.</p>
+<form class="space-y-5" id="consult-form">
+<input class="w-full rounded-lg border-outline-variant/30 bg-surface-container-lowest p-4" id="parent-name" placeholder="Họ tên phụ huynh *" required="" type="text"/>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+<input class="w-full rounded-lg border-outline-variant/30 bg-surface-container-lowest p-4" id="child-name" placeholder="Tên bé *" required="" type="text"/>
+<input class="w-full rounded-lg border-outline-variant/30 bg-surface-container-lowest p-4" id="child-age" max="18" min="3" placeholder="Tuổi bé *" required="" type="number"/>
+</div>
+<input class="w-full rounded-lg border-outline-variant/30 bg-surface-container-lowest p-4" id="phone-number" placeholder="Số điện thoại *" required="" type="tel"/>
+<select class="w-full rounded-lg border-outline-variant/30 bg-surface-container-lowest p-4" id="goal" required="">
+<option value="">Mục tiêu quan tâm *</option>
+<option>Tăng chiều cao</option>
+<option>Giảm cân khoa học</option>
+<option>Tăng sức bền - thể lực</option>
+</select>
+<textarea class="w-full rounded-lg border-outline-variant/30 bg-surface-container-lowest p-4" id="note" placeholder="Ghi chú thêm (nếu có)" rows="4"></textarea>
+<button class="kinetic-gradient text-on-primary px-8 py-4 rounded-xl font-bold w-full" type="submit">Gửi đăng ký</button>
+<p class="text-sm font-semibold" id="consult-message"></p>
+</form>
+</div>
+<div class="bg-surface-container-low rounded-xl p-8 border border-outline-variant/20" id="tim-hieu-them">
+<h3 class="text-3xl font-black mb-4">Tìm hiểu thêm</h3>
+<p class="text-on-surface-variant mb-6">Kit gymvn xây chương trình theo độ tuổi, thể trạng và mục tiêu phát triển để đảm bảo an toàn cho trẻ.</p>
+<div class="space-y-4">
+<div class="bg-surface-container-highest rounded-lg p-4">
+<div class="font-bold mb-1">Lộ trình đánh giá ban đầu</div>
+<p class="text-sm text-on-surface-variant">Đo chiều cao, cân nặng, tư thế và khả năng vận động trước khi xếp lớp.</p>
+</div>
+<div class="bg-surface-container-highest rounded-lg p-4">
+<div class="font-bold mb-1">Theo dõi tiến độ hàng tháng</div>
+<p class="text-sm text-on-surface-variant">Cập nhật chỉ số phát triển và điều chỉnh giáo án cùng chuyên gia.</p>
+</div>
+<div class="bg-surface-container-highest rounded-lg p-4">
+<div class="font-bold mb-1">Đồng hành cùng phụ huynh</div>
+<p class="text-sm text-on-surface-variant">Báo cáo tiến trình và khuyến nghị dinh dưỡng định kỳ.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Footer -->
+<footer class="w-full rounded-t-[3rem] mt-20 bg-orange-100 dark:bg-slate-900">
+<div class="flex flex-col md:flex-row justify-between items-start py-16 px-12 max-w-7xl mx-auto space-y-12 md:space-y-0">
+<div class="max-w-sm">
+<div class="text-2xl font-black text-orange-900 dark:text-orange-200 uppercase italic mb-6">Kit gymvn</div>
+<p class="font-lexend text-label-md text-orange-900/60 dark:text-slate-500 mb-8 leading-relaxed">
+                    Khởi tạo nền tảng thể chất vững chắc cho tương lai. Chúng tôi đồng hành cùng sự phát triển khỏe mạnh của thế hệ trẻ Việt Nam.
+                </p>
+<div class="flex gap-4">
+<a class="w-10 h-10 rounded-full bg-surface-container-high flex items-center justify-center hover:bg-secondary transition-colors group" href="#">
+<span class="material-symbols-outlined text-primary group-hover:text-white">social_leaderboard</span>
+</a>
+<a class="w-10 h-10 rounded-full bg-surface-container-high flex items-center justify-center hover:bg-secondary transition-colors group" href="#">
+<span class="material-symbols-outlined text-primary group-hover:text-white">video_library</span>
+</a>
+<a class="w-10 h-10 rounded-full bg-surface-container-high flex items-center justify-center hover:bg-secondary transition-colors group" href="#">
+<span class="material-symbols-outlined text-primary group-hover:text-white">share</span>
+</a>
+</div>
+</div>
+<div class="grid grid-cols-2 gap-16">
+<div>
+<h4 class="font-bold text-orange-900 mb-6 uppercase tracking-widest text-sm">Chương trình</h4>
+<ul class="space-y-4 font-lexend text-label-md">
+<li><a class="text-orange-900/60 dark:text-slate-500 hover:text-green-500 transition-colors" href="#">Tăng chiều cao</a></li>
+<li><a class="text-orange-900/60 dark:text-slate-500 hover:text-green-500 transition-colors" href="#">Giảm cân khoa học</a></li>
+<li><a class="text-orange-900/60 dark:text-slate-500 hover:text-green-500 transition-colors" href="#">Dinh dưỡng trẻ em</a></li>
+<li><a class="text-orange-900/60 dark:text-slate-500 hover:text-green-500 transition-colors" href="#">Trại hè thể chất</a></li>
+</ul>
+</div>
+<div>
+<h4 class="font-bold text-orange-900 mb-6 uppercase tracking-widest text-sm">Liên kết</h4>
+<ul class="space-y-4 font-lexend text-label-md">
+<li><a class="text-orange-900/60 dark:text-slate-500 hover:text-green-500 transition-colors" href="#">Về chúng tôi</a></li>
+<li><a class="text-orange-900/60 dark:text-slate-500 hover:text-green-500 transition-colors" href="#">Lịch tập luyện</a></li>
+<li><a class="text-orange-900/60 dark:text-slate-500 hover:text-green-500 transition-colors" href="#">Cơ sở vật chất</a></li>
+<li><a class="text-orange-900/60 dark:text-slate-500 hover:text-green-500 transition-colors" href="#">Hỗ trợ</a></li>
+</ul>
+</div>
+</div>
+</div>
+<div class="border-t border-orange-900/10 py-8 px-12 max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center">
+<p class="font-lexend text-label-md text-orange-900/60 dark:text-slate-500">© 2024 Kit gymvn. The Kinetic Anchor.</p>
+<div class="flex gap-8 mt-4 md:mt-0 font-lexend text-label-md">
+<a class="text-orange-900/60 dark:text-slate-500 hover:text-green-500 transition-colors" href="#">Privacy Policy</a>
+<a class="text-orange-900/60 dark:text-slate-500 hover:text-green-500 transition-colors" href="#">Terms of Service</a>
+</div>
+</div>
+</footer>
+<!-- FAB for quick contact (Suppressed on Details but shown on Home) -->
+<button class="fixed bottom-10 right-10 w-16 h-16 kinetic-gradient text-on-primary rounded-full shadow-2xl flex items-center justify-center hover:scale-110 transition-all z-40 group">
+<span class="material-symbols-outlined text-3xl">chat</span>
+<span class="absolute right-full mr-4 bg-surface-container-highest text-primary px-4 py-2 rounded-lg font-bold opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap shadow-lg">
+            Chat với tư vấn viên
+        </span>
+</button>
+<script>
+  const consultForm = document.getElementById("consult-form");
+  const consultMessage = document.getElementById("consult-message");
+
+  consultForm.addEventListener("submit", function (event) {
+    event.preventDefault();
+
+    const phone = document.getElementById("phone-number").value.trim();
+    const age = Number(document.getElementById("child-age").value);
+    const phoneOk = /^(\+84|0)\d{9,10}$/.test(phone.replace(/\s+/g, ""));
+
+    if (!phoneOk) {
+      consultMessage.textContent = "Số điện thoại chưa hợp lệ.";
+      consultMessage.className = "text-sm font-semibold text-red-600";
+      return;
+    }
+
+    if (age < 3 || age > 18) {
+      consultMessage.textContent = "Tuổi bé cần trong khoảng 3-18.";
+      consultMessage.className = "text-sm font-semibold text-red-600";
+      return;
+    }
+
+    consultMessage.textContent = "Đăng ký thành công. Kit gymvn sẽ liên hệ sớm.";
+    consultMessage.className = "text-sm font-semibold text-green-700";
+    consultForm.reset();
+  });
+</script>
+</body></html>

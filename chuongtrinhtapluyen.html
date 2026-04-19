@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+
+<html class="light" lang="vi"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Chương trình tập luyện | Kit gymvn</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "on-tertiary-fixed": "#374155",
+                        "primary": "#9c3f00",
+                        "on-tertiary-fixed-variant": "#535e72",
+                        "surface-tint": "#9c3f00",
+                        "surface-container-lowest": "#ffffff",
+                        "error-container": "#f95630",
+                        "on-surface-variant": "#7f512e",
+                        "on-primary-container": "#401500",
+                        "surface-container-low": "#ffede4",
+                        "surface-dim": "#ffc9a6",
+                        "on-secondary-fixed-variant": "#426500",
+                        "on-error": "#ffefec",
+                        "tertiary-fixed": "#dae6fe",
+                        "error": "#b02500",
+                        "surface-bright": "#fff4ef",
+                        "on-secondary-container": "#3b5b00",
+                        "outline-variant": "#dba078",
+                        "secondary-fixed-dim": "#a5e837",
+                        "on-tertiary-container": "#495468",
+                        "error-dim": "#b92902",
+                        "primary-dim": "#893600",
+                        "primary-fixed": "#ff7a2f",
+                        "on-surface": "#4a2506",
+                        "surface": "#fff4ef",
+                        "tertiary-fixed-dim": "#ccd7ef",
+                        "secondary": "#426500",
+                        "on-background": "#4a2506",
+                        "on-primary": "#fff0ea",
+                        "surface-container-high": "#ffdcc6",
+                        "tertiary-container": "#dae6fe",
+                        "secondary-container": "#b2f746",
+                        "on-error-container": "#520c00",
+                        "tertiary": "#515c70",
+                        "inverse-primary": "#fe6b00",
+                        "surface-container": "#ffe3d2",
+                        "surface-container-highest": "#ffd4b9",
+                        "secondary-fixed": "#b2f746",
+                        "outline": "#9e6b47",
+                        "primary-fixed-dim": "#f66700",
+                        "secondary-dim": "#395800",
+                        "background": "#fff4ef",
+                        "on-secondary": "#dbffa3",
+                        "on-tertiary": "#eff2ff",
+                        "inverse-surface": "#1c0900",
+                        "inverse-on-surface": "#c99169",
+                        "on-primary-fixed": "#000000",
+                        "on-secondary-fixed": "#2d4700",
+                        "on-primary-fixed-variant": "#4f1c00",
+                        "surface-variant": "#ffd4b9",
+                        "primary-container": "#ff7a2f",
+                        "tertiary-dim": "#455064"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "1rem",
+                        "lg": "2rem",
+                        "xl": "3rem",
+                        "full": "9999px"
+                    },
+                    "fontFamily": {
+                        "headline": ["Lexend"],
+                        "body": ["Lexend"],
+                        "label": ["Lexend"]
+                    }
+                },
+            },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .kinetic-gradient {
+            background: linear-gradient(45deg, #9c3f00, #ff7a2f);
+        }
+        .glass-nav {
+            backdrop-filter: blur(24px);
+            -webkit-backdrop-filter: blur(24px);
+        }
+    </style>
+</head>
+<body class="bg-background font-body text-on-surface selection:bg-secondary-container selection:text-on-secondary-container">
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 bg-orange-50/60 glass-nav">
+<div class="flex justify-between items-center h-20 px-8 max-w-7xl mx-auto">
+<a class="text-2xl font-black text-orange-900 uppercase italic tracking-tighter" href="home.html">
+                Kit gymvn
+            </a>
+<div class="hidden md:flex items-center space-x-8 font-lexend text-body-lg tracking-tight">
+<a class="text-orange-800/70 font-medium hover:text-green-500 transition-all duration-300 hover:scale-105" href="home.html">Home</a>
+<a class="text-orange-900 font-bold border-b-2 border-orange-900 pb-1 hover:scale-105 transition-all duration-300" href="chuongtrinhtapluyen.html">Programs</a>
+<a class="text-orange-800/70 font-medium hover:text-green-500 transition-all duration-300 hover:scale-105" href="hoctapvalopphi.html">Schedule</a>
+<a class="text-orange-800/70 font-medium hover:text-green-500 transition-all duration-300 hover:scale-105" href="hotlineangdlogin.html">Contact</a>
+</div>
+<a class="kinetic-gradient text-on-primary px-8 py-3 rounded-xl font-bold hover:scale-105 transition-all duration-300 shadow-lg shadow-primary/20 inline-block" href="chitietlotrinh.html">
+                Tham gia ngay
+            </a>
+</div>
+</nav>
+<main class="pt-32">
+<!-- Hero Section -->
+<section class="max-w-7xl mx-auto px-8 mb-24 grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+<div class="lg:col-span-7">
+<span class="bg-secondary-container text-on-secondary-container px-4 py-1 rounded-full text-label-md font-bold mb-6 inline-block">CHƯƠNG TRÌNH ĐÀO TẠO</span>
+<h1 class="text-6xl md:text-8xl font-black text-primary leading-none tracking-tighter mb-8 italic">
+                    KHƠI PHÁT <br/> <span class="text-secondary">TIỀM NĂNG</span>
+</h1>
+<p class="text-body-lg text-on-surface-variant max-w-xl mb-10 leading-relaxed">
+                    Lộ trình tập luyện chuyên sâu dành riêng cho độ tuổi phát triển, kết hợp khoa học thể thao hiện đại và sự đồng hành tận tâm từ các chuyên gia.
+                </p>
+</div>
+<div class="lg:col-span-5 relative">
+<div class="aspect-square rounded-xl overflow-hidden shadow-2xl relative z-10">
+<img class="w-full h-full object-cover" data-alt="Athletic young teenager performing a high jump in a modern brightly lit sports facility with orange accents" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD0Dl1KdYbnUpCg6ADf2ttmbc9RH2s5yH0-Tz0YjVEPppCj1asjjQfr8H90fst4t9HO5chWk_DDg43NrBeT49EmC5FEKEmoMvEhJkGKoIx9Qp_hwQyTBVfoGdb-solqkEO1hhdcE6_cfmKrFZr5n1ek6TpMmsvo673NA__Pdm9EqpcJqj_r7FhLj9e-8EJ3UrEKTTqO8FQuwp5QAsOOEEHtwnwwgQKpez-dV_oAHMSbRXmv2RlgTpszyqJFfa3wvqUEypU1nXU6TtU"/>
+</div>
+<div class="absolute -bottom-6 -left-6 w-48 h-48 bg-secondary-container rounded-xl -z-0"></div>
+<div class="absolute -top-6 -right-6 w-32 h-32 border-4 border-primary rounded-xl -z-0"></div>
+</div>
+</section>
+<!-- Program Showcase (Asymmetric Layout) -->
+<section class="bg-surface-container-low py-24 rounded-t-[4rem]">
+<div class="max-w-7xl mx-auto px-8">
+<!-- Program 1: Height Increase -->
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-20 items-center mb-40">
+<div class="order-2 lg:order-1">
+<div class="relative">
+<img class="rounded-xl shadow-xl w-full h-[500px] object-cover" data-alt="Young athlete stretching and reaching upwards against a warm sunrise background in an outdoor training area" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBekj9t12qGJXrbZkm30QoX7NeBynoQOBx-nJhH02c-Yp3JPSePpziBSEwDaSgTb_MiEZCrbbvpz2R1FVIkRX8gb5u4YrEO1ATm16p7nG8MkknBWOtI-Byq2VWKomtkqfLpjivKyqvy85WUhcN4WpcDWJbjSKuWNnP-EQukrAUB6-Ml9E6_5vj9o63KsDSqEMXMdeC2uLuJgJDegZlGMbhUJ93jnI1VxPRpFhRZXXd-kofICh0ZBjciC-2YKdm2jjk7-oULVq8AXe0"/>
+<div class="absolute top-8 left-8 bg-white/90 backdrop-blur p-6 rounded-lg shadow-lg max-w-[200px]">
+<span class="material-symbols-outlined text-secondary text-4xl mb-2" data-icon="straighten">straighten</span>
+<p class="text-on-surface font-bold">Mục tiêu trung bình +5-8cm/năm</p>
+</div>
+</div>
+</div>
+<div class="order-1 lg:order-2">
+<h2 class="text-4xl font-black text-primary uppercase italic mb-6">Lộ trình Tăng chiều cao</h2>
+<p class="text-body-lg mb-8 leading-relaxed">Kết hợp các bài tập kéo giãn, bóng rổ và kích thích đĩa sụn tăng trưởng. Chúng tôi tập trung vào khung xương và tư thế chuẩn để tối ưu hóa chiều cao tự nhiên.</p>
+<div class="space-y-4 mb-10">
+<div class="flex items-center gap-4 bg-surface-container p-4 rounded-lg">
+<span class="material-symbols-outlined text-primary" data-icon="exercise">exercise</span>
+<span class="font-bold">Bài tập Jump &amp; Stretch chuyên sâu</span>
+</div>
+<div class="flex items-center gap-4 bg-surface-container p-4 rounded-lg">
+<span class="material-symbols-outlined text-primary" data-icon="restaurant">restaurant</span>
+<span class="font-bold">Dinh dưỡng giàu Canxi &amp; Vitamin D3</span>
+</div>
+<div class="flex items-center gap-4 bg-surface-container p-4 rounded-lg">
+<span class="material-symbols-outlined text-primary" data-icon="query_stats">query_stats</span>
+<span class="font-bold">Đo trắc nghiệm xương định kỳ</span>
+</div>
+</div>
+<a class="bg-secondary text-on-secondary px-8 py-4 rounded-xl font-bold hover:scale-105 transition-all inline-block" href="chitietlotrinh.html">
+                            Xem chi tiết lộ trình
+                        </a>
+</div>
+</div>
+<!-- Program 2: Dynamic Metabolism -->
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-20 items-center">
+<div>
+<h2 class="text-4xl font-black text-secondary uppercase italic mb-6">Chuyển hóa năng động</h2>
+<p class="text-body-lg mb-8 leading-relaxed">Chương trình kiểm soát cân nặng thông qua việc tăng cường trao đổi chất. Không chỉ là giảm cân, mà là xây dựng một cơ thể khỏe mạnh, linh hoạt và bền bỉ.</p>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-10">
+<div class="bg-surface-container-highest p-6 rounded-xl">
+<span class="material-symbols-outlined text-secondary text-3xl mb-3" data-icon="bolt">bolt</span>
+<h4 class="font-bold mb-2">HIIT Kids</h4>
+<p class="text-body-md text-on-surface-variant">Đốt năng lượng hiệu quả trong thời gian ngắn.</p>
+</div>
+<div class="bg-surface-container-highest p-6 rounded-xl">
+<span class="material-symbols-outlined text-secondary text-3xl mb-3" data-icon="nutrition">nutrition</span>
+<h4 class="font-bold mb-2">Eat Clean Kids</h4>
+<p class="text-body-md text-on-surface-variant">Chế độ ăn đủ chất, không kiêng khem tiêu cực.</p>
+</div>
+</div>
+<a class="bg-primary text-on-primary px-8 py-4 rounded-xl font-bold hover:scale-105 transition-all inline-block" href="chitietlotrinh.html">
+                            Bắt đầu chuyển hóa
+                        </a>
+</div>
+<div class="relative">
+<img class="rounded-xl shadow-xl w-full h-[500px] object-cover" data-alt="Group of energetic children doing aerobic exercises in a colorful gym with soft natural light" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCILQr8n41R-V2r6H6Qp7-Uzh7O8EmJcacc3HZ2vB2t89zIdZfBFz_v8Cg7j50E-4A7gZy31al6pYqKpcoSul3dtEUvz96JXdSj8KmRmOpjAoU3-U3-KH7WhkiWOiFC9RL4xwxIjZLMoDPxr2lCeHzJ4WAnXXMKCbOHLiOWV-oegOrc2z_CS_bBB1sE7LP2zm_X4ebMsbncU-njhzS9PvSMidBMV6gbRXyyfEZ9khS2tOpYYl-CEi31MlBM7SgNmfSdDcq9kQOg3k4"/>
+<div class="absolute -bottom-8 right-8 bg-primary text-on-primary p-8 rounded-xl shadow-2xl">
+<div class="text-4xl font-black mb-1">-15%</div>
+<div class="text-sm font-medium uppercase tracking-widest">Mỡ thừa trung bình</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Bento Grid: Progress & Tools -->
+<section class="max-w-7xl mx-auto px-8 py-32">
+<h3 class="text-4xl font-black text-on-surface mb-12 text-center md:text-left">Theo dõi &amp; Tiện ích</h3>
+<div class="grid grid-cols-1 md:grid-cols-4 grid-rows-2 gap-6 h-auto md:h-[600px]">
+<!-- Track Progress Card -->
+<div class="md:col-span-2 md:row-span-2 bg-surface-container p-10 rounded-xl flex flex-col justify-between">
+<div>
+<span class="material-symbols-outlined text-5xl text-primary mb-6" data-icon="analytics">analytics</span>
+<h4 class="text-3xl font-black mb-4">Biểu đồ tăng trưởng</h4>
+<p class="text-on-surface-variant">Hệ thống theo dõi thông số cơ bản (BMI, chiều cao, cân nặng) hàng tuần để điều chỉnh cường độ tập luyện phù hợp.</p>
+</div>
+<div class="mt-8 bg-white/50 rounded-lg p-6 flex justify-around items-end h-40">
+<div class="w-8 bg-primary h-1/2 rounded-t-md"></div>
+<div class="w-8 bg-secondary h-3/4 rounded-t-md"></div>
+<div class="w-8 bg-primary h-2/3 rounded-t-md"></div>
+<div class="w-8 bg-secondary h-full rounded-t-md"></div>
+<div class="w-8 bg-primary h-4/5 rounded-t-md"></div>
+</div>
+</div>
+<!-- Nutrition Card -->
+<div class="md:col-span-2 bg-secondary-container p-8 rounded-xl flex items-center justify-between overflow-hidden relative">
+<div class="relative z-10">
+<h4 class="text-2xl font-black mb-2">Thực đơn cá nhân</h4>
+<p class="text-on-secondary-container max-w-[200px]">Gợi ý món ăn ngon &amp; lành mỗi ngày.</p>
+</div>
+<span class="material-symbols-outlined text-8xl text-on-secondary-container/20 absolute -right-4 -bottom-4" data-icon="skillet">skillet</span>
+</div>
+<!-- Community Card -->
+<div class="bg-surface-container-highest p-8 rounded-xl">
+<span class="material-symbols-outlined text-primary mb-4" data-icon="groups">groups</span>
+<h4 class="font-bold mb-1">Cộng đồng</h4>
+<p class="text-sm opacity-70">Kết nối cùng 500+ học viên nhí.</p>
+</div>
+<!-- Support Card -->
+<div class="bg-primary-container p-8 rounded-xl flex flex-col justify-center">
+<span class="material-symbols-outlined text-on-primary-container mb-4" data-icon="support_agent">support_agent</span>
+<h4 class="font-bold text-on-primary-container">Hỗ trợ 24/7</h4>
+</div>
+</div>
+</section>
+<!-- CTA Section -->
+<section class="max-w-7xl mx-auto px-8 mb-32">
+<div class="kinetic-gradient rounded-xl p-12 md:p-20 text-center relative overflow-hidden">
+<div class="absolute top-0 right-0 w-64 h-64 bg-white/10 rounded-full -mr-32 -mt-32"></div>
+<div class="relative z-10">
+<h2 class="text-4xl md:text-6xl font-black text-on-primary mb-8 tracking-tighter">SẴN SÀNG ĐỂ THAY ĐỔI?</h2>
+<p class="text-on-primary/80 text-xl mb-12 max-w-2xl mx-auto">Đăng ký buổi đánh giá thể chất miễn phí cùng huấn luyện viên ngay hôm nay.</p>
+<div class="flex flex-col md:flex-row gap-4 justify-center">
+<a class="bg-white text-primary px-10 py-5 rounded-full font-black text-lg hover:bg-orange-50 transition-colors inline-block" href="chitietlotrinh.html">
+                            Đăng ký ngay
+                        </a>
+<a class="border-2 border-white text-on-primary px-10 py-5 rounded-full font-black text-lg hover:bg-white/10 transition-colors inline-block" href="chitietlotrinh.html">
+                            Nhận tư vấn
+                        </a>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="w-full bg-orange-100 rounded-t-[3rem] mt-20">
+<div class="flex flex-col md:flex-row justify-between items-center py-12 px-12 max-w-7xl mx-auto space-y-6 md:space-y-0">
+<div class="flex flex-col space-y-2">
+<span class="text-lg font-bold text-orange-900">Kit gymvn</span>
+<span class="font-lexend text-label-md text-orange-900/60">© 2024 Kit gymvn. The Kinetic Anchor.</span>
+</div>
+<div class="flex flex-wrap justify-center gap-8 font-lexend text-label-md">
+<a class="text-orange-900/60 hover:text-green-500 transition-colors" href="#">Privacy Policy</a>
+<a class="text-orange-900/60 hover:text-green-500 transition-colors" href="#">Terms of Service</a>
+<a class="text-orange-900/60 hover:text-green-500 transition-colors" href="#">Careers</a>
+<a class="text-orange-900/60 hover:text-green-500 transition-colors" href="#">Support</a>
+</div>
+<div class="flex gap-4">
+<a class="w-10 h-10 rounded-full bg-surface-container flex items-center justify-center text-primary hover:bg-primary hover:text-on-primary transition-all" href="#">
+<span class="material-symbols-outlined text-sm" data-icon="share">share</span>
+</a>
+<a class="w-10 h-10 rounded-full bg-surface-container flex items-center justify-center text-primary hover:bg-primary hover:text-on-primary transition-all" href="#">
+<span class="material-symbols-outlined text-sm" data-icon="public">public</span>
+</a>
+</div>
+</div>
+</footer>
+</body></html>

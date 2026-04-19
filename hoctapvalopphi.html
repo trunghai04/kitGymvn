@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+
+<html lang="vi"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Lịch tập &amp; Học phí | Kit gymvn</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "on-tertiary-fixed": "#374155",
+                    "primary": "#9c3f00",
+                    "on-tertiary-fixed-variant": "#535e72",
+                    "surface-tint": "#9c3f00",
+                    "surface-container-lowest": "#ffffff",
+                    "error-container": "#f95630",
+                    "on-surface-variant": "#7f512e",
+                    "on-primary-container": "#401500",
+                    "surface-container-low": "#ffede4",
+                    "surface-dim": "#ffc9a6",
+                    "on-secondary-fixed-variant": "#426500",
+                    "on-error": "#ffefec",
+                    "tertiary-fixed": "#dae6fe",
+                    "error": "#b02500",
+                    "surface-bright": "#fff4ef",
+                    "on-secondary-container": "#3b5b00",
+                    "outline-variant": "#dba078",
+                    "secondary-fixed-dim": "#a5e837",
+                    "on-tertiary-container": "#495468",
+                    "error-dim": "#b92902",
+                    "primary-dim": "#893600",
+                    "primary-fixed": "#ff7a2f",
+                    "on-surface": "#4a2506",
+                    "surface": "#fff4ef",
+                    "tertiary-fixed-dim": "#ccd7ef",
+                    "secondary": "#426500",
+                    "on-background": "#4a2506",
+                    "on-primary": "#fff0ea",
+                    "surface-container-high": "#ffdcc6",
+                    "tertiary-container": "#dae6fe",
+                    "secondary-container": "#b2f746",
+                    "on-error-container": "#520c00",
+                    "tertiary": "#515c70",
+                    "inverse-primary": "#fe6b00",
+                    "surface-container": "#ffe3d2",
+                    "surface-container-highest": "#ffd4b9",
+                    "secondary-fixed": "#b2f746",
+                    "outline": "#9e6b47",
+                    "primary-fixed-dim": "#f66700",
+                    "secondary-dim": "#395800",
+                    "background": "#fff4ef",
+                    "on-secondary": "#dbffa3",
+                    "on-tertiary": "#eff2ff",
+                    "inverse-surface": "#1c0900",
+                    "inverse-on-surface": "#c99169",
+                    "on-primary-fixed": "#000000",
+                    "on-secondary-fixed": "#2d4700",
+                    "on-primary-fixed-variant": "#4f1c00",
+                    "surface-variant": "#ffd4b9",
+                    "primary-container": "#ff7a2f",
+                    "tertiary-dim": "#455064"
+            },
+            "borderRadius": {
+                    "DEFAULT": "1rem",
+                    "lg": "2rem",
+                    "xl": "3rem",
+                    "full": "9999px"
+            },
+            "fontFamily": {
+                    "headline": ["Lexend", "sans-serif"],
+                    "body": ["Lexend", "sans-serif"],
+                    "label": ["Lexend", "sans-serif"]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .kinetic-gradient {
+            background: linear-gradient(45deg, #9c3f00 0%, #ff7a2f 100%);
+        }
+        .kinetic-shadow {
+            box-shadow: 0 20px 40px -10px rgba(74, 37, 6, 0.1);
+        }
+        .glass-nav {
+            backdrop-filter: blur(24px);
+        }
+        body {
+            background-color: #fff4ef;
+            color: #4a2506;
+            font-family: 'Lexend', sans-serif;
+        }
+    </style>
+</head>
+<body class="selection:bg-secondary-container selection:text-on-secondary-container">
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 bg-orange-50/60 backdrop-blur-md dark:bg-slate-950/60">
+<div class="flex justify-between items-center h-20 px-8 max-w-7xl mx-auto">
+<a class="text-2xl font-black text-orange-900 dark:text-orange-400 uppercase italic" href="home.html">Kit gymvn</a>
+<div class="hidden md:flex items-center space-gap-8 gap-x-8">
+<a class="text-orange-800/70 dark:text-slate-400 font-medium hover:text-green-500 transition-colors hover:scale-105" href="home.html">Home</a>
+<a class="text-orange-800/70 dark:text-slate-400 font-medium hover:text-green-500 transition-colors hover:scale-105" href="chuongtrinhtapluyen.html">Programs</a>
+<a class="text-orange-900 dark:text-orange-300 font-bold border-b-2 border-orange-900 dark:border-orange-300 pb-1 hover:scale-105" href="hoctapvalopphi.html">Schedule</a>
+<a class="text-orange-800/70 dark:text-slate-400 font-medium hover:text-green-500 transition-colors hover:scale-105" href="hotlineangdlogin.html">Contact</a>
+</div>
+<a class="bg-primary hover:scale-105 transition-all duration-300 text-on-primary px-6 py-2.5 rounded-full font-bold inline-block" href="hotlineangdlogin.html#dang-ky-tu-van">
+                Tham gia ngay
+            </a>
+</div>
+</nav>
+<main class="pt-32 pb-20 px-6 max-w-7xl mx-auto overflow-x-hidden">
+<!-- Hero Section -->
+<section class="mb-24 relative">
+<div class="max-w-3xl">
+<span class="text-secondary font-bold tracking-widest uppercase text-sm mb-4 block">Chinh phục mục tiêu</span>
+<h1 class="text-6xl md:text-8xl font-black leading-none tracking-tighter text-on-background mb-8">
+                    Lịch Tập <br/> &amp; <span class="text-primary italic">Học Phí</span>
+</h1>
+<p class="text-body-lg text-on-surface-variant max-w-xl leading-relaxed">
+                    Hệ thống tập luyện chuyên nghiệp được thiết kế riêng cho thế hệ trẻ. Chọn lịch trình phù hợp và bắt đầu hành trình bứt phá giới hạn ngay hôm nay.
+                </p>
+</div>
+<!-- Asymmetric Decorative Element -->
+<div class="hidden lg:block absolute -right-20 top-0 w-96 h-[500px] rounded-xl overflow-hidden -rotate-6 kinetic-shadow">
+<img alt="Athletic child practicing sports" class="w-full h-full object-cover" data-alt="A focused young athlete in professional sports gear practicing agility drills in a high-end modern sunlit indoor sports facility" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD2gt0eJDnGwqIGuDDvwq1QkBsjwHFsH53Ma_DUlUPb0XQV1llCd2pvV5us4FclK2WHEmiZtvZsLwMbqrX2u5e8Qayg13T45HczAvJdpJsSc7jNZohy9HKLAcd0u5IgHrXqtNVKtoyOIkZvzrWbFHOBSoo8ntghhbWafWG3mPIm6IKWYhjHeJ7uq89M4i7ImXoom21ZkxqJc6IjymxtQR0v1Ywl1ZqUY0YGm0QY07u3Y--K5jS-nQOXyiIlHuyqGbpaENuMW3YGUlk"/>
+</div>
+</section>
+<!-- Weekly Schedule Section -->
+<section class="mb-32" id="cac-goi-dich-vu">
+<div class="flex flex-col md:flex-row justify-between items-end mb-12 gap-6">
+<div>
+<h2 class="text-4xl font-bold tracking-tight mb-2">Lịch tập hàng tuần</h2>
+<p class="text-on-surface-variant">Thời gian linh hoạt cho mọi nhu cầu phát triển thể chất.</p>
+</div>
+<div class="flex gap-2 bg-surface-container-low p-2 rounded-full">
+<button class="bg-primary text-on-primary px-6 py-2 rounded-full text-sm font-bold">Sáng</button>
+<button class="text-on-surface-variant px-6 py-2 rounded-full text-sm font-bold hover:bg-surface-container-high transition-colors">Chiều</button>
+</div>
+</div>
+<!-- Bento Grid Schedule -->
+<div class="grid grid-cols-1 md:grid-cols-7 gap-4">
+<!-- Mon -->
+<div class="bg-surface-container p-6 rounded-lg min-h-[180px] flex flex-col justify-between group hover:bg-secondary-container transition-all duration-500 cursor-pointer">
+<div>
+<span class="text-sm font-bold text-secondary uppercase tracking-widest">Thứ 2</span>
+<h3 class="text-xl font-black mt-2">Kickboxing</h3>
+</div>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-sm">schedule</span>
+<span class="text-sm font-bold">08:00 - 09:30</span>
+</div>
+</div>
+<!-- Tue -->
+<div class="md:col-span-2 bg-surface-container-highest p-6 rounded-lg flex flex-col justify-between group hover:scale-[1.02] transition-transform">
+<div>
+<span class="text-sm font-bold text-primary uppercase tracking-widest">Thứ 3</span>
+<h3 class="text-3xl font-black mt-2">Cơ bản &amp; Hình thể</h3>
+<p class="text-sm mt-2 text-on-surface-variant group-hover:text-on-surface transition-colors">Lớp tập trung vào sự dẻo dai và kỹ thuật nền tảng.</p>
+</div>
+<div class="flex items-center justify-between mt-6">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-sm">schedule</span>
+<span class="text-sm font-bold">09:00 - 10:30</span>
+</div>
+<span class="bg-primary/10 text-primary px-3 py-1 rounded-full text-[10px] font-bold uppercase">Phổ biến</span>
+</div>
+</div>
+<!-- Wed -->
+<div class="bg-surface-container p-6 rounded-lg min-h-[180px] flex flex-col justify-between hover:bg-secondary-container transition-all">
+<div>
+<span class="text-sm font-bold text-secondary uppercase tracking-widest">Thứ 4</span>
+<h3 class="text-xl font-black mt-2">Cardio Cao Độ</h3>
+</div>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-sm">schedule</span>
+<span class="text-sm font-bold">08:00 - 09:30</span>
+</div>
+</div>
+<!-- Thu -->
+<div class="bg-surface-container p-6 rounded-lg min-h-[180px] flex flex-col justify-between hover:bg-secondary-container transition-all">
+<div>
+<span class="text-sm font-bold text-secondary uppercase tracking-widest">Thứ 5</span>
+<h3 class="text-xl font-black mt-2">Yoga Kid</h3>
+</div>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-sm">schedule</span>
+<span class="text-sm font-bold">14:00 - 15:30</span>
+</div>
+</div>
+<!-- Fri -->
+<div class="md:col-span-2 bg-surface-container-low p-6 rounded-lg border-2 border-primary/20 flex flex-col justify-between">
+<div>
+<span class="text-sm font-bold text-primary uppercase tracking-widest">Thứ 6</span>
+<h3 class="text-3xl font-black mt-2">Cross-Training</h3>
+</div>
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-sm text-primary">fitness_center</span>
+<span class="text-sm font-bold">Cả ngày</span>
+</div>
+<div class="flex -space-x-2">
+<div class="w-8 h-8 rounded-full bg-primary-fixed border-2 border-surface"></div>
+<div class="w-8 h-8 rounded-full bg-secondary-fixed border-2 border-surface"></div>
+<div class="w-8 h-8 rounded-full bg-primary border-2 border-surface"></div>
+</div>
+</div>
+</div>
+<!-- Sat -->
+<div class="md:col-span-4 bg-surface p-8 rounded-lg flex flex-col md:flex-row gap-8 items-center bg-[url('https://www.transparenttextures.com/patterns/cubes.png')]">
+<div class="flex-1">
+<span class="text-sm font-bold text-secondary uppercase tracking-widest">Thứ 7</span>
+<h3 class="text-4xl font-black mt-2">Sự kiện Cuối tuần</h3>
+<p class="mt-4 text-on-surface-variant">Các trò chơi vận động phối hợp và thi đấu giao hữu giữa các thành viên.</p>
+</div>
+<div class="w-full md:w-1/3 bg-primary-container p-6 rounded-xl text-on-primary-container kinetic-shadow">
+<span class="text-xs font-bold uppercase block mb-1">Thời gian đặc biệt</span>
+<p class="text-2xl font-bold">09:00 - 17:00</p>
+</div>
+</div>
+<!-- Sun -->
+<div class="md:col-span-3 bg-secondary p-8 rounded-lg text-on-secondary flex flex-col justify-center">
+<span class="text-sm font-bold uppercase tracking-widest opacity-80">Chủ nhật</span>
+<h3 class="text-4xl font-black mt-2">Phục hồi &amp; Nghỉ ngơi</h3>
+<p class="mt-4 opacity-90 italic">"Nghỉ ngơi cũng là một phần của quá trình tập luyện."</p>
+</div>
+</div>
+</section>
+<!-- Pricing Section -->
+<section class="mb-32">
+<div class="text-center mb-16">
+<h2 class="text-5xl font-black tracking-tight mb-4">Các gói dịch vụ</h2>
+<p class="text-on-surface-variant max-w-2xl mx-auto">Đầu tư vào sức khỏe và tương lai với các lộ trình tối ưu về chi phí và hiệu quả.</p>
+</div>
+<div class="grid grid-cols-1 lg:grid-cols-3 gap-8 items-stretch">
+<!-- Monthly Plan -->
+<div class="bg-surface-container-low p-10 rounded-xl flex flex-col hover:scale-105 transition-all duration-300">
+<div class="mb-8">
+<h3 class="text-2xl font-bold mb-2">Khởi động hàng tháng</h3>
+<p class="text-on-surface-variant text-sm">Phù hợp cho người mới bắt đầu trải nghiệm môi trường.</p>
+</div>
+<div class="mb-8">
+<span class="text-5xl font-black">1.2tr</span>
+<span class="text-on-surface-variant font-medium">/ tháng</span>
+</div>
+<ul class="space-y-4 mb-10 flex-grow">
+<li class="flex items-center gap-3">
+<span class="material-symbols-outlined text-secondary">check_circle</span>
+<span>3 buổi tập/tuần</span>
+</li>
+<li class="flex items-center gap-3">
+<span class="material-symbols-outlined text-secondary">check_circle</span>
+<span>Kiểm tra hình thể cơ bản</span>
+</li>
+<li class="flex items-center gap-3">
+<span class="material-symbols-outlined text-secondary">check_circle</span>
+<span>Tủ đồ cá nhân</span>
+</li>
+</ul>
+<a class="w-full py-4 rounded-full border-2 border-primary text-primary font-bold hover:bg-primary hover:text-on-primary transition-colors text-center block" href="hotlineangdlogin.html?goi=khoi-dong-hang-thang#dang-ky-tu-van">
+                        Chọn gói này
+                    </a>
+</div>
+<!-- Quarterly Plan - Featured -->
+<div class="bg-surface-container-highest p-10 rounded-xl flex flex-col relative scale-105 z-10 kinetic-shadow">
+<div class="absolute -top-4 left-1/2 -translate-x-1/2 bg-secondary text-on-secondary px-6 py-1 rounded-full text-xs font-black uppercase tracking-widest">Phổ biến nhất</div>
+<div class="mb-8">
+<h3 class="text-2xl font-bold mb-2 text-primary">Quý Elite</h3>
+<p class="text-on-surface-variant text-sm">Lộ trình 3 tháng để thấy sự thay đổi rõ rệt nhất.</p>
+</div>
+<div class="mb-8">
+<span class="text-5xl font-black">3.2tr</span>
+<span class="text-on-surface-variant font-medium">/ quý</span>
+</div>
+<ul class="space-y-4 mb-10 flex-grow">
+<li class="flex items-center gap-3">
+<span class="material-symbols-outlined text-secondary" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+<span class="font-bold">Full truy cập tất cả các lớp</span>
+</li>
+<li class="flex items-center gap-3">
+<span class="material-symbols-outlined text-secondary" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+<span>Lịch tập cá nhân hóa</span>
+</li>
+<li class="flex items-center gap-3">
+<span class="material-symbols-outlined text-secondary" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+<span>Tư vấn dinh dưỡng hàng tháng</span>
+</li>
+<li class="flex items-center gap-3">
+<span class="material-symbols-outlined text-secondary" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+<span>Giảm 10% đồ uống tại quầy</span>
+</li>
+</ul>
+<a class="w-full py-4 rounded-full bg-primary text-on-primary font-bold hover:scale-105 transition-transform shadow-lg shadow-primary/20 text-center block" href="hotlineangdlogin.html?goi=quy-elite#dang-ky-tu-van">
+                        Đăng ký ngay
+                    </a>
+</div>
+<!-- Annual Plan -->
+<div class="kinetic-gradient p-10 rounded-xl flex flex-col text-on-primary hover:scale-105 transition-all duration-300">
+<div class="mb-8">
+<h3 class="text-2xl font-bold mb-2">Hiệu suất hàng năm</h3>
+<p class="opacity-80 text-sm">Cam kết lâu dài cho sự phát triển vượt trội.</p>
+</div>
+<div class="mb-8">
+<span class="text-5xl font-black">11tr</span>
+<span class="opacity-80 font-medium">/ năm</span>
+</div>
+<ul class="space-y-4 mb-10 flex-grow">
+<li class="flex items-center gap-3">
+<span class="material-symbols-outlined">star</span>
+<span>Toàn bộ quyền lợi Elite</span>
+</li>
+<li class="flex items-center gap-3">
+<span class="material-symbols-outlined">star</span>
+<span>Tặng 1 bộ đồng phục Kit cao cấp</span>
+</li>
+<li class="flex items-center gap-3">
+<span class="material-symbols-outlined">star</span>
+<span>Bảo lưu tối đa 45 ngày</span>
+</li>
+<li class="flex items-center gap-3">
+<span class="material-symbols-outlined">star</span>
+<span>10 buổi tập cùng HLV cá nhân</span>
+</li>
+</ul>
+<a class="w-full py-4 rounded-full bg-on-primary text-primary font-bold hover:bg-secondary-container hover:text-on-secondary-container transition-colors text-center block" href="hotlineangdlogin.html?goi=hieu-suat-hang-nam#dang-ky-tu-van">
+                        Sở hữu gói VIP
+                    </a>
+</div>
+</div>
+</section>
+<!-- FAQ Section -->
+<section class="max-w-4xl mx-auto">
+<h2 class="text-4xl font-black text-center mb-12">Câu hỏi thường gặp</h2>
+<div class="space-y-4">
+<div class="bg-surface-container-low p-6 rounded-xl">
+<div class="flex justify-between items-center cursor-pointer group">
+<h4 class="text-lg font-bold">Trẻ em bao nhiêu tuổi có thể tham gia?</h4>
+<span class="material-symbols-outlined text-primary group-hover:rotate-180 transition-transform">expand_more</span>
+</div>
+<p class="mt-4 text-on-surface-variant leading-relaxed">Các chương trình tại Kit gymvn được thiết kế cho trẻ từ 5 đến 16 tuổi, chia theo các nhóm tuổi và cấp độ thể chất khác nhau để đảm bảo an toàn và hiệu quả.</p>
+</div>
+<div class="bg-surface-container-low p-6 rounded-xl">
+<div class="flex justify-between items-center cursor-pointer group">
+<h4 class="text-lg font-bold">Tôi có thể thay đổi lịch tập không?</h4>
+<span class="material-symbols-outlined text-primary">expand_more</span>
+</div>
+<p class="mt-4 text-on-surface-variant leading-relaxed hidden">Có, bạn hoàn toàn có thể thay đổi ca tập nếu báo trước 12 tiếng qua ứng dụng hoặc hotline để chúng tôi sắp xếp sỹ số lớp phù hợp.</p>
+</div>
+<div class="bg-surface-container-low p-6 rounded-xl">
+<div class="flex justify-between items-center cursor-pointer group">
+<h4 class="text-lg font-bold">Có chính sách hoàn phí không?</h4>
+<span class="material-symbols-outlined text-primary">expand_more</span>
+</div>
+</div>
+<div class="bg-surface-container-low p-6 rounded-xl">
+<div class="flex justify-between items-center cursor-pointer group">
+<h4 class="text-lg font-bold">Cần chuẩn bị những gì khi đến tập?</h4>
+<span class="material-symbols-outlined text-primary">expand_more</span>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="w-full rounded-t-[3rem] mt-20 bg-orange-100 dark:bg-slate-900">
+<div class="flex flex-col md:flex-row justify-between items-center py-12 px-12 max-w-7xl mx-auto space-y-6 md:space-y-0">
+<div class="flex flex-col items-center md:items-start gap-4">
+<div class="text-lg font-bold text-orange-900 dark:text-orange-200">Kit gymvn</div>
+<div class="text-label-md text-orange-900/60 dark:text-slate-500">© 2024 Kit gymvn. The Kinetic Anchor.</div>
+</div>
+<div class="flex flex-wrap justify-center gap-x-8 gap-y-4">
+<a class="text-label-md text-orange-900/60 dark:text-slate-500 hover:text-green-500 dark:hover:text-green-300 transition-colors" href="#">Privacy Policy</a>
+<a class="text-label-md text-orange-900/60 dark:text-slate-500 hover:text-green-500 dark:hover:text-green-300 transition-colors" href="#">Terms of Service</a>
+<a class="text-label-md text-orange-900/60 dark:text-slate-500 hover:text-green-500 dark:hover:text-green-300 transition-colors" href="#">Careers</a>
+<a class="text-label-md text-orange-900/60 dark:text-slate-500 hover:text-green-500 dark:hover:text-green-300 transition-colors" href="#">Support</a>
+</div>
+<div class="flex gap-4">
+<div class="w-10 h-10 rounded-full bg-surface-container-highest flex items-center justify-center text-primary cursor-pointer hover:scale-110 transition-transform">
+<span class="material-symbols-outlined">public</span>
+</div>
+<div class="w-10 h-10 rounded-full bg-surface-container-highest flex items-center justify-center text-primary cursor-pointer hover:scale-110 transition-transform">
+<span class="material-symbols-outlined">share</span>
+</div>
+</div>
+</div>
+</footer>
+</body></html>
