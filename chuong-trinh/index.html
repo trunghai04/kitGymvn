@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Chương trình | Kit gymvn</title>
+</head>
+<body>
+  <script>
+    fetch("../chuongtrinhtapluyen.html", { cache: "no-store" })
+      .then((res) => res.text())
+      .then((html) => {
+        document.open();
+        document.write(html);
+        document.close();
+      });
+  </script>
+</body>
+</html>
